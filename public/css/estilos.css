@@ -4,16 +4,12 @@ body{
     font-family: Roboto;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
 
-header{
+.cabezera_1{
     display: flex;
     justify-content: space-between;
     min-height: 70px;
-    background-color: aqua;
+    background-color: white;
     align-items: center;
     padding: 10px;
 }
@@ -23,10 +19,11 @@ header{
     display: flex;
 }
 
-.numero{
+.cabezera_numero{
     font-size: 20px;
     padding-left: 60%;
-
+    text-decoration: none;
+    color: black;
 }
 
 .logo img{
@@ -35,9 +32,30 @@ header{
     padding-left: 5px;
 }
 
-nav a{
+.nav_red a{
     padding-right:10px;
+    text-decoration: none;
+    color: black;
 }
+
+.nav_principal{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 75px;
+    background-color: rgb(19,35,104);
+    align-items: center;
+
+}
+.nav_principal a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
 
 @media (max-width: 728px){
     header{
