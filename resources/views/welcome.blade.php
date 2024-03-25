@@ -5,106 +5,867 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Funeraria</title>
+    <title>Funerals</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <!-- CSS -->
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
-    <!-- Styles -->
-    <link href="{{asset('css/estilos.css')}}" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Iconos -->
+    <link href="{{asset('img/favicon.png')}}" rel="icon">
+    <link href="{{asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+    <!-- Google Letras -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+    <!-- Archivos CSS del proveedor -->
+    <link href="{{asset('vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+    <link href="{{asset('vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+    <!-- Archivos CSS de la plantilla -->
+    <link href="{{asset('css/style.css')}}" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="cabezera_1">
-            <a href="#" class="logo">
-                <img src="{{asset('img/logo-copia.svg')}}" alt="funeraria">
-            </a>
-            <a href="" class="cabezera_numero">
-                <i class="bi bi-telephone-fill"></i>
-                +51 925916943
-            </a>
-            <nav class="nav_red">
-                <a href="" class="nav-link">
-                    <svg width="60px" height="60px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
-                        <title>Facebook</title>
-                        <desc>Icono de Facebook</desc>
-                        <path fill="#1877F2" d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z" />
-                        <path fill="#ffffff" d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z" />
-                    </svg>
-                </a>
-                <a href="" class="nav-link">
-                    <svg width="60px" height="60px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <title>TikTok</title>
-                        <desc>Icono de TikTok</desc>
-                        <path d="M8.45095 19.7926C8.60723 18.4987 9.1379 17.7743 10.1379 17.0317C11.5688 16.0259 13.3561 16.5948 13.3561 16.5948V13.2197C13.7907 13.2085 14.2254 13.2343 14.6551 13.2966V17.6401C14.6551 17.6401 12.8683 17.0712 11.4375 18.0775C10.438 18.8196 9.90623 19.5446 9.7505 20.8385C9.74562 21.5411 9.87747 22.4595 10.4847 23.2536C10.3345 23.1766 10.1815 23.0889 10.0256 22.9905C8.68807 22.0923 8.44444 20.7449 8.45095 19.7926ZM22.0352 6.97898C21.0509 5.90039 20.6786 4.81139 20.5441 4.04639H21.7823C21.7823 4.04639 21.5354 6.05224 23.3347 8.02482L23.3597 8.05134C22.8747 7.7463 22.43 7.38624 22.0352 6.97898ZM28 10.0369V14.293C28 14.293 26.42 14.2312 25.2507 13.9337C23.6179 13.5176 22.5685 12.8795 22.5685 12.8795C22.5685 12.8795 21.8436 12.4245 21.785 12.3928V21.1817C21.785 21.6711 21.651 22.8932 21.2424 23.9125C20.709 25.246 19.8859 26.1212 19.7345 26.3001C19.7345 26.3001 18.7334 27.4832 16.9672 28.28C15.3752 28.9987 13.9774 28.9805 13.5596 28.9987C13.5596 28.9987 11.1434 29.0944 8.96915 27.6814C8.49898 27.3699 8.06011 27.0172 7.6582 26.6277L7.66906 26.6355C9.84383 28.0485 12.2595 27.9528 12.2595 27.9528C12.6779 27.9346 14.0756 27.9528 15.6671 27.2341C17.4317 26.4374 18.4344 25.2543 18.4344 25.2543C18.5842 25.0754 19.4111 24.2001 19.9423 22.8662C20.3498 21.8474 20.4849 20.6247 20.4849 20.1354V11.3475C20.5435 11.3797 21.2679 11.8347 21.2679 11.8347C21.2679 11.8347 22.3179 12.4734 23.9506 12.8889C25.1204 13.1864 26.7 13.2483 26.7 13.2483V9.91314C27.2404 10.0343 27.7011 10.0671 28 10.0369Z" fill="#EE1D52" />
-                        <path d="M26.7009 9.91314V13.2472C26.7009 13.2472 25.1213 13.1853 23.9515 12.8879C22.3188 12.4718 21.2688 11.8337 21.2688 11.8337C21.2688 11.8337 20.5444 11.3787 20.4858 11.3464V20.1364C20.4858 20.6258 20.3518 21.8484 19.9432 22.8672C19.4098 24.2012 18.5867 25.0764 18.4353 25.2553C18.4353 25.2553 17.4337 26.4384 15.668 27.2352C14.0765 27.9539 12.6788 27.9357 12.2604 27.9539C12.2604 27.9539 9.84473 28.0496 7.66995 26.6366L7.6591 26.6288C7.42949 26.4064 7.21336 26.1717 7.01177 25.9257C6.31777 25.0795 5.89237 24.0789 5.78547 23.7934C5.78529 23.7922 5.78529 23.791 5.78547 23.7898C5.61347 23.2937 5.25209 22.1022 5.30147 20.9482C5.38883 18.9122 6.10507 17.6625 6.29444 17.3494C6.79597 16.4957 7.44828 15.7318 8.22233 15.0919C8.90538 14.5396 9.6796 14.1002 10.5132 13.7917C11.4144 13.4295 12.3794 13.2353 13.3565 13.2197V16.5948C13.3565 16.5948 11.5691 16.028 10.1388 17.0317C9.13879 17.7743 8.60812 18.4987 8.45185 19.7926C8.44534 20.7449 8.68897 22.0923 10.0254 22.991C10.1813 23.0898 10.3343 23.1775 10.4845 23.2541C10.7179 23.5576 11.0021 23.8221 11.3255 24.0368C12.631 24.8632 13.7249 24.9209 15.1238 24.3842C16.0565 24.0254 16.7586 23.2167 17.0842 22.3206C17.2888 21.7611 17.2861 21.1978 17.2861 20.6154V4.04639H20.5417C20.6763 4.81139 21.0485 5.90039 22.0328 6.97898C22.4276 7.38624 22.8724 7.7463 23.3573 8.05134C23.5006 8.19955 24.2331 8.93231 25.1734 9.38216C25.6596 9.61469 26.1722 9.79285 26.7009 9.91314Z" fill="#000000" />
-                        <path d="M4.48926 22.7568V22.7594L4.57004 22.9784C4.56076 22.9529 4.53074 22.8754 4.48926 22.7568Z" fill="#69C9D0" />
-                        <path d="M10.5128 13.7916C9.67919 14.1002 8.90498 14.5396 8.22192 15.0918C7.44763 15.7332 6.79548 16.4987 6.29458 17.354C6.10521 17.6661 5.38897 18.9168 5.30161 20.9528C5.25223 22.1068 5.61361 23.2983 5.78561 23.7944C5.78543 23.7956 5.78543 23.7968 5.78561 23.798C5.89413 24.081 6.31791 25.0815 7.01191 25.9303C7.2135 26.1763 7.42963 26.4111 7.65924 26.6334C6.92357 26.1457 6.26746 25.5562 5.71236 24.8839C5.02433 24.0451 4.60001 23.0549 4.48932 22.7626C4.48919 22.7605 4.48919 22.7584 4.48932 22.7564V22.7527C4.31677 22.2571 3.95431 21.0651 4.00477 19.9096C4.09213 17.8736 4.80838 16.6239 4.99775 16.3108C5.4985 15.4553 6.15067 14.6898 6.92509 14.0486C7.608 13.4961 8.38225 13.0567 9.21598 12.7484C9.73602 12.5416 10.2778 12.3891 10.8319 12.2934C11.6669 12.1537 12.5198 12.1415 13.3588 12.2575V13.2196C12.3808 13.2349 11.4148 13.4291 10.5128 13.7916Z" fill="#69C9D0" />
-                        <path d="M20.5438 4.04635H17.2881V20.6159C17.2881 21.1983 17.2881 21.76 17.0863 22.3211C16.7575 23.2167 16.058 24.0253 15.1258 24.3842C13.7265 24.923 12.6326 24.8632 11.3276 24.0368C11.0036 23.823 10.7187 23.5594 10.4844 23.2567C11.5962 23.8251 12.5913 23.8152 13.8241 23.341C14.7558 22.9821 15.4563 22.1734 15.784 21.2774C15.9891 20.7178 15.9864 20.1546 15.9864 19.5726V3H20.4819C20.4819 3 20.4315 3.41188 20.5438 4.04635ZM26.7002 8.99104V9.9131C26.1725 9.79263 25.6609 9.61447 25.1755 9.38213C24.2352 8.93228 23.5026 8.19952 23.3594 8.0513C23.5256 8.1559 23.6981 8.25106 23.8759 8.33629C25.0192 8.88339 26.1451 9.04669 26.7002 8.99104Z" fill="#69C9D0" />
-                    </svg>
-                </a>
-                <a href="" class="nav-link">
-                    <svg width="60px" height="60px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <title>Instagram</title>
-                        <desc>Icono de Instagram</desc>
-                        <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)" />
-                        <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)" />
-                        <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)" />
-                        <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white" />
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white" />
-                        <defs>
-                            <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
-                                <stop stop-color="#B13589" />
-                                <stop offset="0.79309" stop-color="#C62F94" />
-                                <stop offset="1" stop-color="#8A3AC8" />
-                            </radialGradient>
-                            <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
-                                <stop stop-color="#E0E8B7" />
-                                <stop offset="0.444662" stop-color="#FB8A2E" />
-                                <stop offset="0.71474" stop-color="#E2425C" />
-                                <stop offset="1" stop-color="#E2425C" stop-opacity="0" />
-                            </radialGradient>
-                            <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
-                                <stop offset="0.156701" stop-color="#406ADC" />
-                                <stop offset="0.467799" stop-color="#6A45BE" />
-                                <stop offset="1" stop-color="#6A45BE" stop-opacity="0" />
-                            </radialGradient>
-                        </defs>
 
-                    </svg>
-                </a>
-                <a href="" class="nav-link">
-                    <svg width="60px" height="60px" viewBox="0 -7 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- ======= Encabezamiento ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid">
 
-                        <title>Youtube</title>
-                        <desc>Icono de Youtube</desc>
-                        <defs>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-xl-11 d-flex align-items-center justify-content-between">
 
-                        </defs>
-                        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Color-" transform="translate(-200.000000, -368.000000)" fill="#CE1312">
-                                <path d="M219.044,391.269916 L219.0425,377.687742 L232.0115,384.502244 L219.044,391.269916 Z M247.52,375.334163 C247.52,375.334163 247.0505,372.003199 245.612,370.536366 C243.7865,368.610299 241.7405,368.601235 240.803,368.489448 C234.086,368 224.0105,368 224.0105,368 L223.9895,368 C223.9895,368 213.914,368 207.197,368.489448 C206.258,368.601235 204.2135,368.610299 202.3865,370.536366 C200.948,372.003199 200.48,375.334163 200.48,375.334163 C200.48,375.334163 200,379.246723 200,383.157773 L200,386.82561 C200,390.73817 200.48,394.64922 200.48,394.64922 C200.48,394.64922 200.948,397.980184 202.3865,399.447016 C204.2135,401.373084 206.612,401.312658 207.68,401.513574 C211.52,401.885191 224,402 224,402 C224,402 234.086,401.984894 240.803,401.495446 C241.7405,401.382148 243.7865,401.373084 245.612,399.447016 C247.0505,397.980184 247.52,394.64922 247.52,394.64922 C247.52,394.64922 248,390.73817 248,386.82561 L248,383.157773 C248,379.246723 247.52,375.334163 247.52,375.334163 L247.52,375.334163 Z" id="Youtube">
+                    <a href="#" class="logo"><img src="{{asset('img/FUNERALS7.png')}}" alt="" class="img-fluid" style="height: 300px; width: auto;"></a>
 
-                                </path>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-            </nav>
+                    <nav id="navbar" class="navbar">
+                        <ul>
+                            <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+                            <li><a class="nav-link scrollto" href="#about">Sobre Nosotros</a></li>
+                            <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
+                            <li><a class="nav-link scrollto " href="#portfolio">Galeria</a></li>
+                            <li><a class="nav-link scrollto " href="#team">Equipo</a></li>
+                            <li><a class="nav-link scrollto" href="#contact">Contactanos</a></li>
+                        </ul>
+                        <i class="bi bi-list mobile-nav-toggle"></i>
+                    </nav><!-- .navbar -->
+                </div>
+            </div>
+
         </div>
-        <div class="cabezera_2">
-            <nav class="nav_principal">
-                <a href="" class="nav-link">INICIO</a>
-                <a href="" class="nav-link">NOSOTROS</a>
-                <a href="" class="nav-link">SERVICIOS</a>
-                <a href="" class="nav-link">CONTACTANOS</a>
-            </nav>
+    </header><!-- End Header -->
+
+    <!-- ======= hero Section ======= -->
+    <section id="hero">
+        <div class="hero-container">
+            <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="12000">
+
+                <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active" style="background-image: url(img/hero-carousel/imagen_1.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">Nuestro apoyo en los momentos difíciles.</h2>
+                                <p class="animate__animated animate__fadeInUp">Le brindamos todo nuestro apoyo en estos momentos tan dificiles. <br> Con una llamada le atenderemos, las 24 horas, los 365 días.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(img/hero-carousel/imagen_2.jpeg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">Nuestra cercanía tu tranquilidad.</h2>
+                                <p class="animate__animated animate__fadeInUp">Entendemos que cada funeral es diferente porque cada persona <br> es única y cada situación familiar es diferente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(img/hero-carousel/imagen_3.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">Confíe en nostros y no se preocupe por nada.</h2>
+                                <p class="animate__animated animate__fadeInUp">Realizamos todas las gestiones funerarias. A su disposición para asesorarle y ayudarle a resolver cualquier tipo de duda o propblema que le puedan surgir.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(img/hero-carousel/imagen_4.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">Una despedida digna y memorable.</h2>
+                                <p class="animate__animated animate__fadeInUp">Con más de 30 años de experiencia, nos aseguramos de que su ser querido reciba una despedida digna y memorable, honrando su recuerdo de manera especial.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="background-image: url(img/hero-carousel/imagen_5.jpg)">
+                        <div class="carousel-container">
+                            <div class="container">
+                                <h2 class="animate__animated animate__fadeInDown">Contigo en cada paso honrando a tus seres queridos</h2>
+                                <p class="animate__animated animate__fadeInUp">Nuestro compromiso con la atención y la excelencia se refleja a través de nuestros servicios funerarios personalizados, diseñados para celebrar la vida y atesorar los recuerdos de sus seres queridos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                </a>
+
+            </div>
         </div>
-    </header>
+    </section><!-- End Hero Section -->
+
+    <main id="main">
+
+        <!-- ======= Featured Services Section Section ======= -->
+        <section id="featured-services">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 box">
+                        <i class="bi bi-file-medical"></i>
+                        <h4 class="title"><a href="">Certificación médica</a></h4>
+                        <p class="description">Un profesional de la salud visitará la dirección que nos indique con el objetivo de realizar la
+                            certificación médica del fallecido e iniciar los trámites funerarios.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-4 box box-bg">
+                        <i class="bi bi-people"></i>
+                        <h4 class="title"><a href="">Contrato a domicilio</a></h4>
+                        <p class="description">Acercaremos el contrato hasta tu ubicación al momento de hacer el retiro en la carroza fúnebre.</p>
+                    </div>
+
+                    <div class="col-lg-4 box">
+                        <i class="bi bi-telephone"></i>
+                        <h4 class="title"><a href="">Asesoría Legal</a></h4>
+                        <p class="description">Puede que tenga muchas inquietudes o no conozca por donde empezar. Llámenos, estamos disponibles
+                            telefónicamente las 24 horas, los 7 días de la semana.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- End Featured Services Section -->
+
+        <!-- ======= About Us Section ======= -->
+        <section id="about">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3>SOMOS FUNERALS</h3>
+                    <p>En el adiós a un ser querido necesitas más que una palabra cálida. Necesitas que la experiencia te acompañe en cada decisión
+                        y en cada fase del proceso. Necesitas que te escuchen y te hablen con transparencia desde una mentalidad abierta. En algunos
+                        momentos buscas algo más que una mano tendida. Buscas que entiendan lo que necesitas y que se anticipen con la mejor de las soluciones.
+                        Buscas sentirte comprendido. Buscas que te cuiden, te apoyen y te sostengan. Quieres poder confiar y no preocuparte de nada. Adelante.
+                        Somos Mémora y estamos contigo.</p>
+                </header>
+
+                <div class="row about-cols">
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="{{asset('img/about-mission.jpg')}}" alt="" class="img-fluid">
+                                <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                            </div>
+                            <h2 class="title"><a href="">Nuestra misión</a></h2>
+                            <p>
+                                Nos dedicamos a proporcionar servicios funerarios personalizados y dignos que honren la vida y el legado de los seres queridos.
+                                Nos esforzamos por ser una fuente de consuelo y apoyo para las familias durante su duelo, ofreciendo atención profesional y compasiva en cada paso del camino.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="{{asset('img/about-plan.jpg')}}" alt="" class="img-fluid">
+                                <div class="icon"><i class="bi bi-brightness-high"></i></div>
+                            </div>
+                            <h2 class="title"><a href="">Nuestro plan</a></h2>
+                            <p>
+                                Encontrarás una amplia gama de planes y servicios diseñados para brindar apoyo y comodidad en momentos difíciles. Desde la pre-planificación de arreglos funerarios hasta servicios conmemorativos personalizados, estamos aquí para acompañarte en cada paso del camino.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="about-col">
+                            <div class="img">
+                                <img src="{{asset('img/about-vision.jpg')}}" alt="" class="img-fluid">
+                                <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                            </div>
+                            <h2 class="title"><a href="">Nuestra visión</a></h2>
+                            <p>
+                                Nos esforzamos por ser reconocidos como líderes en la industria funeraria, yendo más allá de las expectativas convencionales al ofrecer servicios de alta calidad y apoyo compasivo a las familias en sus momentos de pérdida.
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End About Us Section -->
+
+        <!-- ======= Services Section ======= -->
+        <section id="services">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header wow fadeInUp">
+                    <h3>Explore Nuestros Servicios Funerarios</h3>
+                    <p class="central">Ofrecemos una gama respetuosa e integral de servicios para honrar a sus seres queridos y apoyarlo durante este momento difícil.</p>
+                </header>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bi bi-fire"></i></div>
+                        <h4 class="title"><a href="">Servicios de Cremación</a></h4>
+                        <p class="description">Ofrecemos servicios completos de cremación, brindando a las familias una alternativa respetuosa y personalizada al entierro tradicional.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                        <h4 class="title"><a href="">Sepelios Tradicionales</a></h4>
+                        <p class="description">Nos especializamos en la planificación y coordinación de sepelios tradicionales, proporcionando a las familias un servicio completo y respetuoso que refleje los valores y creencias del difunto.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                        <h4 class="title"><a href="">Ceremonias Personalizadas</a></h4>
+                        <p class="description">Creamos ceremonias conmemorativas únicas y significativas que celebran la vida y el legado del ser querido fallecido.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                        <h4 class="title"><a href="">Asistencia en la Pre-planificación</a></h4>
+                        <p class="description">Ofrecemos asesoramiento experto y asistencia en la pre-planificación de arreglos funerarios, permitiendo a los individuos expresar sus deseos finales y aliviar la carga emocional para sus seres queridos en el futuro.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon"><i class="bi bi-heart"></i></div>
+                        <h4 class="title"><a href="">Apoyo en el Duelo</a></h4>
+                        <p class="description">Nuestro equipo proporciona recursos y apoyo en el duelo para ayudar a las familias a sobrellevar su pérdida. Desde grupos de apoyo hasta asesoramiento individual, estamos aquí para ofrecer consuelo y orientación durante el proceso de duelo.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <h4 class="title"><a href="">Servicios de Embalsamamiento y Preparación</a></h4>
+                        <p class="description">Nos encargamos de la preparación del difunto con profesionalismo y cuidado, ofreciendo servicios de embalsamamiento y preparación estética para garantizar una presentación respetuosa y digna en el servicio funerario.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Services Section -->
+
+        <!-- ======= Call To Action Section ======= -->
+        <section id="call-to-action">
+            <div class="container text-center" data-aos="zoom-in">
+                <h3>Call To Action</h3>
+                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+        </section><!-- End Call To Action Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3>Our Skills</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                </header>
+
+                <div class="skills-content">
+
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">HTML <i class="val">100%</i></span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">CSS <i class="val">90%</i></span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">JavaScript <i class="val">75%</i></span>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                            <span class="skill">Photoshop <i class="val">55%</i></span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Skills Section -->
+
+        <!-- ======= Facts Section ======= -->
+        <section id="facts">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3>Facts</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </header>
+
+                <div class="row counters">
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Clients</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Projects</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Hours Of Support</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>
+                        <p>Hard Workers</p>
+                    </div>
+
+                </div>
+
+                <div class="facts-img">
+                    <img src="{{asset('img/facts-img.png')}}" alt="" class="img-fluid">
+                </div>
+
+            </div>
+        </section><!-- End Facts Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3 class="section-title">Our Portfolio</h3>
+                </header>
+
+                <div class="row" data-aos="fade-up" data-aos-delay="100"">
+      <div class=" col-lg-12">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-app">App</li>
+                        <li data-filter=".filter-card">Card</li>
+                        <li data-filter=".filter-web">Web</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/app1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/app1.jpg')}}" data-lightbox="portfolio" data-title="App 1" class="link-preview"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">App 1</a></h4>
+                            <p>App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/web3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/web3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">Web 3</a></h4>
+                            <p>Web</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/app2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/app2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 2"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">App 2</a></h4>
+                            <p>App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/card2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/card2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">Card 2</a></h4>
+                            <p>Card</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/web2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/web2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">Web 2</a></h4>
+                            <p>Web</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/app3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/app3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">App 3</a></h4>
+                            <p>App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/card1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/card1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">Card 1</a></h4>
+                            <p>Card</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/card3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/card3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">Card 3</a></h4>
+                            <p>Card</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="{{asset('img/portfolio/web1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portfolio/web1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+                            <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+                        </figure>
+
+                        <div class="portfolio-info">
+                            <h4><a href="#">Web 1</a></h4>
+                            <p>Web</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section><!-- End Portfolio Section -->
+
+        <!-- ======= Our Clients Section ======= -->
+        <section id="clients">
+            <div class="container" data-aos="zoom-in">
+
+                <header class="section-header">
+                    <h3>Our Clients</h3>
+                </header>
+
+                <div class="clients-slider swiper">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-1.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-2.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-3.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-4.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-5.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-6.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-7.png')}}" class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{asset('img/clients/client-8.png')}}" class="img-fluid" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End Our Clients Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <header class="section-header">
+                    <h3>Testimonials</h3>
+                </header>
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{asset('img/testimonial-1.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Saul Goodman</h3>
+                                <h4>Ceo &amp; Founder</h4>
+                                <p>
+                                    <img src="{{asset('img/quote-sign-left.png')}}" class="quote-sign-left" alt="">
+                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                                    <img src="{{asset('img/quote-sign-right.png')}}" class="quote-sign-right" alt="">
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{asset('img/testimonial-2.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Sara Wilsson</h3>
+                                <h4>Designer</h4>
+                                <p>
+                                    <img src="{{asset('img/quote-sign-left.png')}}" class="quote-sign-left" alt="">
+                                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                                    <img src="{{asset('img/quote-sign-right.png')}}" class="quote-sign-right" alt="">
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{asset('img/testimonial-3.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Jena Karlis</h3>
+                                <h4>Store Owner</h4>
+                                <p>
+                                    <img src="{{asset('img/quote-sign-left.png')}}" class="quote-sign-left" alt="">
+                                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                                    <img src="{{asset('img/quote-sign-right.png')}}" class="quote-sign-right" alt="">
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{asset('img/testimonial-4.jpg')}}" class="testimonial-img" alt="">
+                                <h3>Matt Brandon</h3>
+                                <h4>Freelancer</h4>
+                                <p>
+                                    <img src="{{asset('img/quote-sign-left')}}.png" class="quote-sign-left" alt="">
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                                    <img src="{{asset('img/quote-sign-right')}}.png" class="quote-sign-right" alt="">
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <img src="{{asset('img/testimonial-5.jpg')}}" class="testimonial-img" alt="">
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                                <p>
+                                    <img src="{{asset('img/quote-sign-left.png')}}" class="quote-sign-left" alt="">
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                                    <img src="{{asset('img/quote-sign-right.png')}}" class="quote-sign-right" alt="">
+                                </p>
+                            </div>
+                        </div><!-- End testimonial item -->
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section><!-- End Testimonials Section -->
+
+        <!-- ======= Team Section ======= -->
+        <section id="team">
+            <div class="container" data-aos="fade-up">
+                <div class="section-header">
+                    <h3>NUESTRO EQUIPO</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="100">
+                            <img src="{{asset('img/team-1.jpg')}}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Walter White</h4>
+                                    <span>Chief Executive Officer</span>
+                                    <div class="social">
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="200">
+                            <img src="{{asset('img/team-2.jpg')}}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Sarah Jhonson</h4>
+                                    <span>Product Manager</span>
+                                    <div class="social">
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="300">
+                            <img src="{{asset('img/team-3.jpg')}}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>William Anderson</h4>
+                                    <span>CTO</span>
+                                    <div class="social">
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="member" data-aos="fade-up" data-aos-delay="400">
+                            <img src="{{asset('img/team-4.jpg')}}" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Amanda Jepson</h4>
+                                    <span>Accountant</span>
+                                    <div class="social">
+                                        <a href="#"><i class="bi bi-twitter"></i></a>
+                                        <a href="#"><i class="bi bi-facebook"></i></a>
+                                        <a href="#"><i class="bi bi-instagram"></i></a>
+                                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- End Team Section -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="section-bg">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-header">
+                    <h3>Contact Us</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                </div>
+
+                <div class="row contact-info">
+
+                    <div class="col-md-4">
+                        <div class="contact-address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>Address</h3>
+                            <address>A108 Adam Street, NY 535022, USA</address>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-phone">
+                            <i class="bi bi-phone"></i>
+                            <h3>Phone Number</h3>
+                            <p><a href="tel:+51999999999">+51 999 999 999</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="contact-email">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Loading</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>BizPage</h3>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            A108 Adam Street <br>
+                            New York, NY 535022<br>
+                            United States <br>
+                            <strong>Phone:</strong> +1 5589 55488 55<br>
+                            <strong>Email:</strong> info@example.com<br>
+                        </p>
+
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+                Designed by <a href="#">BootstrapMade</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Uncomment below i you want to use a preloader -->
+    <!-- <div id="preloader"></div> -->
+
+    <!-- Vendor JS Files -->
+    <script src="{{asset('vendor/purecounter/purecounter_vanilla.js')}}"></script>
+    <script src="{{asset('vendor/aos/aos.js')}}"></script>
+    <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{asset('vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{asset('vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{asset('vendor/waypoints/noframework.waypoints.js')}}"></script>
+    <script src="{{asset('vendor/php-email-form/validate.js')}}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{asset('js/main.js')}}"></script>
 
 </body>
 
