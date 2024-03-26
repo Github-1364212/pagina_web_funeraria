@@ -318,8 +318,8 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-ataud">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portafolio/web3.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portafolio/web3.jpg')}}"  class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Lincoln copa tres de cedros"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/ataud1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/ataud1.jpg')}}"  class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Lincoln copa tres de cedros"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
@@ -348,8 +348,8 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-urna">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portafolio/card2.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portafolio/card2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Caliz mediano"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/urna2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/urna2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Caliz mediano"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
@@ -363,8 +363,8 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-ataud">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portafolio/web2.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portafolio/web2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Imperial stándar básico"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/ataud2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/ataud2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Imperial stándar básico"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
@@ -393,8 +393,8 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-urna">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portafolio/card1.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portafolio/card1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Caliz tallado ovalado"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/urna3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/urna3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Caliz tallado ovalado"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
@@ -408,8 +408,8 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-urna">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portafolio/card3.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portafolio/card3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Cofre con cruz dorada"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/urna4.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/urna4.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Cofre con cruz dorada"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
@@ -423,8 +423,8 @@
                 <div class="col-lg-4 col-md-6 portfolio-item filter-ataud">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portafolio/web1.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portafolio/web1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fígaro redondes francés"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/ataud3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/ataud3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fígaro redondes francés"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
@@ -748,13 +748,13 @@
 
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                    <!-- <div class="col-lg-3 col-md-6 footer-newsletter">
                         <h4>Nuestro boletín</h4>
                         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Suscribir">
                         </form>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
