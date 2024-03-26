@@ -29,6 +29,8 @@
 
     <!-- Archivos CSS de la plantilla -->
     <link href="{{asset('css/style.css')}}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
 </head>
 
 <body>
@@ -238,12 +240,12 @@
                         <p class="description">Ofrecemos servicios completos de cremación, brindando a las familias una alternativa respetuosa y personalizada al entierro tradicional.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon"><i class="bi bi-card-checklist"></i></div>
+                        <div class="icon"><i class="bi bi-patch-check"></i></div>
                         <h4 class="title"><a href="">Sepelios Tradicionales</a></h4>
                         <p class="description">Nos especializamos en la planificación y coordinación de sepelios tradicionales, proporcionando a las familias un servicio completo y respetuoso que refleje los valores y creencias del difunto.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
-                        <div class="icon"><i class="bi bi-bar-chart"></i></div>
+                        <div class="icon"><i class="bi bi-people"></i></div>
                         <h4 class="title"><a href="">Ceremonias Personalizadas</a></h4>
                         <p class="description">Creamos ceremonias conmemorativas únicas y significativas que celebran la vida y el legado del ser querido fallecido.</p>
                     </div>
@@ -258,7 +260,7 @@
                         <p class="description">Nuestro equipo proporciona recursos y apoyo en el duelo para ayudar a las familias a sobrellevar su pérdida. Desde grupos de apoyo hasta asesoramiento individual, estamos aquí para ofrecer consuelo y orientación durante el proceso de duelo.</p>
                     </div>
                     <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="400">
-                        <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+                        <div class="icon"><i class="bi bi-bezier2"></i></div>
                         <h4 class="title"><a href="">Servicios de Embalsamamiento y Preparación</a></h4>
                         <p class="description">Nos encargamos de la preparación del difunto con profesionalismo y cuidado, ofreciendo servicios de embalsamamiento y preparación estética para garantizar una presentación respetuosa y digna en el servicio funerario.</p>
                     </div>
@@ -271,244 +273,164 @@
         <!-- ======= Call To Action Section ======= -->
         <section id="call-to-action">
             <div class="container text-center" data-aos="zoom-in">
-                <h3>Call To Action</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a class="cta-btn" href="#">Call To Action</a>
+                <p>
+                    "Trato de aceptar que te fuiste a un lugar mejor, tú sabrás que nunca dejaré de extrañarte y no se cuando me dejará de doler tu partida pero viviré recordándote en todo lo que me enseñaste, Te amaremos por siempre"
+                </p>
             </div>
         </section><!-- End Call To Action Section -->
-
-        <!-- ======= Skills Section ======= -->
-        <section id="skills">
-            <div class="container" data-aos="fade-up">
-
-                <header class="section-header">
-                    <h3>Our Skills</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-                </header>
-
-                <div class="skills-content">
-
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                            <span class="skill">HTML <i class="val">100%</i></span>
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                            <span class="skill">CSS <i class="val">90%</i></span>
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <span class="skill">JavaScript <i class="val">75%</i></span>
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                            <span class="skill">Photoshop <i class="val">55%</i></span>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Skills Section -->
-
-        <!-- ======= Facts Section ======= -->
-        <section id="facts">
-            <div class="container" data-aos="fade-up">
-
-                <header class="section-header">
-                    <h3>Facts</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-                </header>
-
-                <div class="row counters">
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Clients</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="421" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Projects</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="1364" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Hours Of Support</p>
-                    </div>
-
-                    <div class="col-lg-3 col-6 text-center">
-                        <span data-purecounter-start="0" data-purecounter-end="38" data-purecounter-duration="1" class="purecounter"></span>
-                        <p>Hard Workers</p>
-                    </div>
-
-                </div>
-
-                <div class="facts-img">
-                    <img src="{{asset('img/facts-img.png')}}" alt="" class="img-fluid">
-                </div>
-
-            </div>
-        </section><!-- End Facts Section -->
 
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="section-bg">
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h3 class="section-title">Our Portfolio</h3>
+                    <h3 class="section-title">NUESTRA GALERIA</h3>
                 </header>
 
-                <div class="row" data-aos="fade-up" data-aos-delay="100"">
+                <div class="row" data-aos="fade-up" data-aos-delay="100">
       <div class=" col-lg-12">
                     <ul id="portfolio-flters">
-                        <li data-filter="*" class="filter-active">All</li>
-                        <li data-filter=".filter-app">App</li>
-                        <li data-filter=".filter-card">Card</li>
-                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter="*" class="filter-active">Todo</li>
+                        <li data-filter=".filter-movil">Moviles</li>
+                        <li data-filter=".filter-urna">Urnas</li>
+                        <li data-filter=".filter-ataud">Ataúdes</li>
                     </ul>
                 </div>
             </div>
 
             <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-movil">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/app1.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/app1.jpg')}}" data-lightbox="portfolio" data-title="App 1" class="link-preview"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/movil1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/movil1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Carrozal" ><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">App 1</a></h4>
-                            <p>App</p>
+                            <h4><a href="#">Carrozal</a></h4>
+                            <p>MOVIL</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ataud">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/web3.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/web3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 3"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/web3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/web3.jpg')}}"  class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Lincoln copa tres de cedros"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">Web 3</a></h4>
-                            <p>Web</p>
+                            <h4><a href="#">Lincoln copa tres de cedros</a></h4>
+                            <p>Ataud</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-movil">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/app2.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/app2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 2"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/movil2.png')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/movil2.png')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Carro porta flores"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">App 2</a></h4>
-                            <p>App</p>
+                            <h4><a href="#">Carro porta flores</a></h4>
+                            <p>MOVIL</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-urna">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/card2.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/card2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 2"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/card2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/card2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Caliz mediano"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">Card 2</a></h4>
-                            <p>Card</p>
+                            <h4><a href="#">Caliz mediano</a></h4>
+                            <p>Urna</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ataud">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/web2.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/web2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 2"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/web2.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/web2.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Imperial stándar básico"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">Web 2</a></h4>
-                            <p>Web</p>
+                            <h4><a href="#">Imperial stándar básico</a></h4>
+                            <p>Ataud</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-movil">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/app3.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/app3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="App 3"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/movil3.png')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/movil3.png')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Vehículo de acompañamiento"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">App 3</a></h4>
-                            <p>App</p>
+                            <h4><a href="#">Vehículo de acompañamiento</a></h4>
+                            <p>Movil</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-urna">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/card1.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/card1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 1"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/card1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/card1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Caliz tallado ovalado"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">Card 1</a></h4>
-                            <p>Card</p>
+                            <h4><a href="#">Caliz tallado ovalado</a></h4>
+                            <p>Urna</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-urna">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/card3.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/card3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Card 3"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/card3.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/card3.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Cofre con cruz dorada"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">Card 3</a></h4>
-                            <p>Card</p>
+                            <h4><a href="#">Cofre con cruz dorada</a></h4>
+                            <p>Urna</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="col-lg-4 col-md-6 portfolio-item filter-ataud">
                     <div class="portfolio-wrap">
                         <figure>
-                            <img src="{{asset('img/portfolio/web1.jpg')}}" class="img-fluid" alt="">
-                            <a href="{{asset('img/portfolio/web1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Web 1"><i class="bi bi-plus"></i></a>
+                            <img src="{{asset('img/portafolio/web1.jpg')}}" class="img-fluid" alt="">
+                            <a href="{{asset('img/portafolio/web1.jpg')}}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Fígaro redondes francés"><i class="bi bi-plus"></i></a>
                             <a href="#" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
                         </figure>
 
                         <div class="portfolio-info">
-                            <h4><a href="#">Web 1</a></h4>
-                            <p>Web</p>
+                            <h4><a href="#">Fígaro redondes francés</a></h4>
+                            <p>Ataud</p>
                         </div>
                     </div>
                 </div>
@@ -523,7 +445,7 @@
             <div class="container" data-aos="zoom-in">
 
                 <header class="section-header">
-                    <h3>Our Clients</h3>
+                    <h3>Nuestros aliados</h3>
                 </header>
 
                 <div class="clients-slider swiper">
@@ -548,7 +470,7 @@
             <div class="container" data-aos="fade-up">
 
                 <header class="section-header">
-                    <h3>Testimonials</h3>
+                    <h3>Testimonios</h3>
                 </header>
 
                 <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
@@ -631,7 +553,6 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-header">
                     <h3>NUESTRO EQUIPO</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                 </div>
 
                 <div class="row">
@@ -718,24 +639,28 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-header">
-                    <h3>Contact Us</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                    <h3>Contáctenos</h3>
+                    <p>¿Tienes alguna duda? Escríbenos y déjanos tu mensaje. Nos pondremos en contacto.</p>
                 </div>
 
                 <div class="row contact-info">
 
                     <div class="col-md-4">
                         <div class="contact-address">
-                            <i class="bi bi-geo-alt"></i>
-                            <h3>Address</h3>
-                            <address>A108 Adam Street, NY 535022, USA</address>
+                            <i class="bi bi-calendar-week"></i>
+                            <h3>Horario</h3>
+                            <address>
+                                Horario de atención <br>
+                                Lunes a Viernes: 9:00 a.m. a 5:00 p.m. <br>
+                                Sábado, Domingo y Feriado: 8:00 a.m. a 5:00 p.m.
+                            </address>
                         </div>
                     </div>
 
                     <div class="col-md-4">
                         <div class="contact-phone">
                             <i class="bi bi-phone"></i>
-                            <h3>Phone Number</h3>
+                            <h3>Número de teléfono</h3>
                             <p><a href="tel:+51999999999">+51 999 999 999</a></p>
                         </div>
                     </div>
@@ -743,8 +668,8 @@
                     <div class="col-md-4">
                         <div class="contact-email">
                             <i class="bi bi-envelope"></i>
-                            <h3>Email</h3>
-                            <p><a href="mailto:info@example.com">info@example.com</a></p>
+                            <h3>Correo electrónico</h3>
+                            <p><a href="mailto:info@example.com">funerals@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -754,24 +679,24 @@
                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Tu correo electrónico" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                <input type="text" class="form-control" name="text" id="text" placeholder="Tu número de identidad" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="text" id="text" placeholder="Tu numero telefonico" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                            <textarea class="form-control" name="message" rows="5" placeholder="Descripción" required></textarea>
                         </div>
                         <div class="my-3">
-                            <div class="loading">Loading</div>
+                            <div class="loading">Cargando</div>
                             <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="sent-message">Tu mensaje ha sido enviado.¡Gracias!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
+                        <div class="text-center"><button type="submit">Enviar mensaje</button></div>
                     </form>
                 </div>
 
@@ -787,29 +712,30 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-info">
-                        <h3>BizPage</h3>
+
+                        <img src="{{asset('img/FUNERALS8.png')}}" alt="" class="img-fluid" style="height: auto; width: auto;">
                         <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
+                        <h4>Enlaces útiles</h4>
                         <ul>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre nosotros</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Términos de servicio</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="#">Política de privacidad</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
+                        <h4>Contáctenos</h4>
                         <p>
                             A108 Adam Street <br>
                             New York, NY 535022<br>
                             United States <br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            <strong>Teléfono:</strong> +51 999 999 999<br>
+                            <strong>Correo electrónico:</strong> funerals@gmail.com<br>
                         </p>
 
                         <div class="social-links">
@@ -823,10 +749,10 @@
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
+                        <h4>Nuestro boletín</h4>
                         <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
                         <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                            <input type="email" name="email"><input type="submit" value="Suscribir">
                         </form>
                     </div>
 
@@ -836,7 +762,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong>BizPage</strong>. All Rights Reserved
+                &copy; Derechos de autor <strong>Funerals</strong>. Reservados todos los derechos
             </div>
             <div class="credits">
                 <!--
@@ -845,14 +771,14 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
       -->
-                Designed by <a href="#">BootstrapMade</a>
+                Diseñada con <a href="#">Bootstrap</a>
             </div>
         </div>
     </footer><!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
     <!-- Uncomment below i you want to use a preloader -->
-    <!-- <div id="preloader"></div> -->
+    <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
     <script src="{{asset('vendor/purecounter/purecounter_vanilla.js')}}"></script>
